@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+header h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+h1 a, a:hover, a:visited, a:active {
+    color:white;
+    text-decoration: none;
+}
+header{
+    background-color: navy;    
+}
+
+header .container {
+    color: white;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 1024px;
+}
+
+.menu li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.main-container{
+    max-width: 100%;
+    width: 1024px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+#sobre img{
+    width: 512px;
+    padding: 0px 16px 16px 0px;
+}
+
+#sobre div{
+    margin-left: 16px;
+}
+
+#sobre h1{
+    color: navy;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    border-bottom: solid 2px navy;
+}
+
+.carrossel{
+    width: 450px;
+}
+
+#promos h1{
+    color: navy;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+    border-bottom: solid 2px navy;
+    margin-top: 32px;
+    margin-bottom: 16px
+}
+
+#secao-produtos h1{
+    color: navy;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+    border-bottom: solid 2px navy;
+    margin-top: 32px;
+    margin-bottom: 16px
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 1%;
+    margin-bottom: 32px;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto button{
+    width: 100%;
+}
+
+@media screen and (max-width: 640px){
+    #sobre{
+        display: inline;
+    }
+
+    #sobre img{
+        width: 100%;
+        margin-top: 32px;
+        padding: 0px 0px 16px 16px;
+    }
+
+    #secao-produtos{
+        padding-left: 16px;
+    }
+
+    .produtos{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    #sobre{
+        display: inline;
+    }
+
+    #sobre img{
+        width: 100%;
+        margin-top: 32px;
+        padding: 0px 0px 16px 16px;
+    }
+
+    #secao-produtos{
+        padding-left: 16px;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 16px;
+    }
+}
